@@ -35,6 +35,7 @@ jobs:
         with:
           database_url: "postgres://test_user:test_user_password@localhost:5432/testdb"
           path: "backups/backup.sql"
+          options: "-O"
 
       - name: Check changes to backup file.
         id: changed_backup
